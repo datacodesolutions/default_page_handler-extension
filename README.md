@@ -1,2 +1,3 @@
-# default_page_handler-extension
+# Default Page Handler Extension
+
 The default page handler for the Pages module.
