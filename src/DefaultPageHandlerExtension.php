@@ -1,6 +1,6 @@
 <?php namespace Anomaly\DefaultPageHandlerExtension;
 
-use Anomaly\PagesModule\Page\Handler\PageHandlerExtension;
+use Anomaly\Streams\Platform\Addon\Extension\Extension;
 
 /**
  * Class DefaultPageHandlerExtension
@@ -10,7 +10,7 @@ use Anomaly\PagesModule\Page\Handler\PageHandlerExtension;
  * @author        Ryan Thompson <ryan@anomaly.is>
  * @package       Anomaly\DefaultPageHandlerExtension
  */
-class DefaultPageHandlerExtension extends PageHandlerExtension
+class DefaultPageHandlerExtension extends Extension
 {
 
     /**
