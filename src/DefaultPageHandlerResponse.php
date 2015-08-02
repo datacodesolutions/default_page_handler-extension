@@ -1,7 +1,6 @@
 <?php namespace Anomaly\DefaultPageHandlerExtension;
 
 use Anomaly\PagesModule\Page\Contract\PageInterface;
-use Anomaly\PagesModule\Page\Handler\Contract\PageHandlerResponseInterface;
 use Anomaly\PagesModule\Page\PageAsset;
 use Anomaly\PagesModule\Page\PageAuthorizer;
 use Anomaly\PagesModule\Page\PageBreadcrumb;
@@ -18,7 +17,7 @@ use Anomaly\PagesModule\Page\PageResponse;
  * @author        Ryan Thompson <ryan@anomaly.is>
  * @package       Anomaly\DefaultPageHandlerExtension
  */
-class DefaultPageHandlerResponse implements PageHandlerResponseInterface
+class DefaultPageHandlerResponse
 {
 
     /**
