@@ -1,5 +1,8 @@
 <?php namespace Anomaly\DefaultPageHandlerExtension;
 
+use Anomaly\DefaultPageHandlerExtension\Command\MakePage;
+use Anomaly\PagesModule\Page\Contract\PageInterface;
+use Anomaly\PagesModule\Page\Handler\Contract\PageHandlerInterface;
 use Anomaly\Streams\Platform\Addon\Extension\Extension;
 
 /**
@@ -10,7 +13,7 @@ use Anomaly\Streams\Platform\Addon\Extension\Extension;
  * @author        Ryan Thompson <ryan@anomaly.is>
  * @package       Anomaly\DefaultPageHandlerExtension
  */
-class DefaultPageHandlerExtension extends Extension
+class DefaultPageHandlerExtension extends Extension implements PageHandlerInterface
 {
 
     /**
@@ -21,4 +24,13 @@ class DefaultPageHandlerExtension extends Extension
      */
     protected $provides = 'anomaly.module.pages::page_handler.default';
 
+    /**
+     * Make the page's response.
+     *
+     * @param PageInterface $page
+     */
+    public function make(PageInterface $page)
+    {
+        $this->dispatch(new MakePage($page));
+    }
 }
