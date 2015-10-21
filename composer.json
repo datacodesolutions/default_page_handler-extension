@@ -3,9 +3,10 @@
     "type": "streams-addon",
     "description": "The default page handler for the Pages module.",
     "keywords": [
-        "streams extension",
-        "streams addon",
-        "extension"
+        "pages",
+        "module",
+        "page handler",
+        "streams platform"
     ],
     "homepage": "http://anomaly.is/",
     "license": "MIT",
