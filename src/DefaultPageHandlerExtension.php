@@ -21,7 +21,7 @@ class DefaultPageHandlerExtension extends PageHandlerExtension
      *
      * @var string
      */
-    protected $provides = 'anomaly.module.pages::page_handler.default';
+    protected $provides = 'anomaly.module.pages::handler.default';
 
     /**
      * Make the page's response.
