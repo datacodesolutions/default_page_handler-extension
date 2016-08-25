@@ -6,7 +6,7 @@ use Anomaly\PagesModule\Page\PageBreadcrumb;
 use Anomaly\PagesModule\Page\PageContent;
 use Anomaly\PagesModule\Page\PageLoader;
 use Anomaly\PagesModule\Page\PageResponse;
-use Illuminate\Contracts\Bus\SelfHandling;
+
 
 /**
  * Class MakePage
@@ -14,9 +14,8 @@ use Illuminate\Contracts\Bus\SelfHandling;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\DefaultPageHandlerExtension\Command
  */
-class MakePage implements SelfHandling
+class MakePage
 {
 
     /**
